@@ -31,8 +31,6 @@ def validate_hash_file(file_one, file_two):
     file_one_hash = add_file_to_hash(file_one, 1024)
     file_two_hash = add_file_to_hash(file_two, 1024)
 
-    print(f"File one: {file_one_hash},\n File two: {file_two_hash}")
-
     if file_one_hash == file_two_hash:
         print("The files are identical (matching hashes).")
         return
